@@ -1,0 +1,124 @@
+{
+  "revision_id": "db42ccc90db54347e3f2c415d812304500f768163dd721d0bc25da62d803324c",
+  "name": "my_a2",
+  "run_list": [
+    "recipe[my_a2::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "managed-automate2": {
+      "version": "0.6.1",
+      "identifier": "16a1e650c9ff3109e8f4860e05f52fb4eb7de328",
+      "dotted_decimal_identifier": "6370460057599793.2789411709126133.52454091514664",
+      "source": "../../managed-automate2-cookbook",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/mattray/managed-automate2-cookbook.git",
+        "revision": "bfd178e10374d9a7859d642af54413ad4b45874a",
+        "working_tree_clean": true,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "../../managed-automate2-cookbook"
+      }
+    },
+    "my_a2": {
+      "version": "0.1.0",
+      "identifier": "3704740471f0eeb7e8f442f01ade5ea8c2577942",
+      "dotted_decimal_identifier": "15486020056379630.51766056530746078.104078908029250",
+      "source": "..",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": null,
+        "working_tree_clean": true,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": ".."
+      }
+    },
+    "ohai": {
+      "version": "5.2.5",
+      "identifier": "f393ae21b9c53af8a3ee75662fce43f3c2ce5167",
+      "dotted_decimal_identifier": "68560795440104762.69986038791417806.74714224415079",
+      "cache_key": "ohai-5.2.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
+        "version": "5.2.5"
+      }
+    },
+    "sysctl": {
+      "version": "1.0.5",
+      "identifier": "3d2a23146a32c45b9a3635a51b7814c9528f24d5",
+      "dotted_decimal_identifier": "17216303734076100.25783780499594104.22854906094805",
+      "cache_key": "sysctl-1.0.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
+        "version": "1.0.5"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "managed-automate2",
+        ">= 0.0.0"
+      ],
+      [
+        "my_a2",
+        ">= 0.0.0"
+      ],
+      [
+        "ohai",
+        "= 5.2.5"
+      ],
+      [
+        "sysctl",
+        "= 1.0.5"
+      ]
+    ],
+    "dependencies": {
+      "managed-automate2 (0.6.1)": [
+        [
+          "sysctl",
+          "~> 1.0.5"
+        ]
+      ],
+      "my_a2 (0.1.0)": [
+        [
+          "managed-automate2",
+          "~> 0.6"
+        ]
+      ],
+      "ohai (5.2.5)": [
+
+      ],
+      "sysctl (1.0.5)": [
+        [
+          "ohai",
+          ">= 5.0.0"
+        ]
+      ]
+    }
+  }
+}
