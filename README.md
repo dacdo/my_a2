@@ -1,4 +1,4 @@
-# my_mcs Cookbook
+# my_a2 Cookbook
 
 ## Scope
 
