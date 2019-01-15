@@ -1,5 +1,5 @@
 {
-  "revision_id": "db42ccc90db54347e3f2c415d812304500f768163dd721d0bc25da62d803324c",
+  "revision_id": "6a917a9ae245522d233487ce9c260eb36e2c092562158936e9203ebcb1286dbe",
   "name": "my_a2",
   "run_list": [
     "recipe[my_a2::default]"
@@ -9,16 +9,16 @@
   ],
   "cookbook_locks": {
     "managed-automate2": {
-      "version": "0.6.1",
-      "identifier": "16a1e650c9ff3109e8f4860e05f52fb4eb7de328",
-      "dotted_decimal_identifier": "6370460057599793.2789411709126133.52454091514664",
+      "version": "0.7.0",
+      "identifier": "a8d4ccae387445cd2955c9131ecad99dd3d28e79",
+      "dotted_decimal_identifier": "47521771648742469.57747818648116938.239271886884473",
       "source": "../../managed-automate2-cookbook",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/mattray/managed-automate2-cookbook.git",
-        "revision": "bfd178e10374d9a7859d642af54413ad4b45874a",
-        "working_tree_clean": true,
+        "revision": "5d7890b89d54f6b7e301eaf560c2d4d89a78d678",
+        "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
           "origin/HEAD -> origin/master",
@@ -31,18 +31,18 @@
     },
     "my_a2": {
       "version": "0.1.0",
-      "identifier": "3704740471f0eeb7e8f442f01ade5ea8c2577942",
-      "dotted_decimal_identifier": "15486020056379630.51766056530746078.104078908029250",
+      "identifier": "e8a88bdaae25b1f06fa91e45c4af32c04c7a06e8",
+      "dotted_decimal_identifier": "65487513219638705.67676766558602415.55801498175208",
       "source": "..",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": null,
-        "working_tree_clean": true,
-        "published": false,
+        "remote": "https://github.com/dacdo/my_a2.git",
+        "revision": "c15bae9e2748178bcf476a0b41eb07dacda95548",
+        "working_tree_clean": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {
@@ -98,7 +98,7 @@
       ]
     ],
     "dependencies": {
-      "managed-automate2 (0.6.1)": [
+      "managed-automate2 (0.7.0)": [
         [
           "sysctl",
           "~> 1.0.5"
@@ -107,7 +107,7 @@
       "my_a2 (0.1.0)": [
         [
           "managed-automate2",
-          "~> 0.6"
+          "~> 0.7"
         ]
       ],
       "ohai (5.2.5)": [

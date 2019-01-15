@@ -1,5 +1,8 @@
 name 'my_a2'
-run_list 'recipe[my_a2::default]'
+
+run_list 'my_a2::default'
+
+# Where to find external cookbooks:
+default_source :supermarket
 cookbook 'my_a2', path: '..'
 cookbook 'managed-automate2', path: '../../managed-automate2-cookbook'
-default_source :supermarket

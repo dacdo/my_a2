@@ -1,0 +1,46 @@
+driver:
+  name: vagrant
+  synced_folders:
+      - ['../backups', '/tmp/backups', 'create: true', owner: "root", group: "root"]
+      - ['./aibundle', '/tmp/aibundle', 'create: true', owner: "root", group: "root"]
+  customize:
+    memory: 2548
+    cpus: 2
+  log_level: :debug
+
+transport:
+  name: ssh
+
+provisioner:
+  name: chef_zero
+  policyfile: policies/my_a2.rb
+  always_update_cookbooks: true
+  product_name: chef
+
+  attributes:
+    default_source:
+      :supermarket
+    common-name: ''
+    ma2:
+      aib:
+        installer: ''
+        version: '20181203090454'
+      restore:
+        dir: /tmp/backups
+      tokens:
+        clients: ['chef-server.chrisg']
+      ldap:
+        host: ''
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: bento/centos-7
+
+suites:
+  - name: default
+    provisioner:
+    verifier:
+      inspec_tests:
+        - test/integration/default
