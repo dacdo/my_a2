@@ -13,7 +13,7 @@ default['ma2']['aib']['file'] = 'aib-file'
 # default['ma2']['aib']['proxy'] = 'http://10.157.10.4:8080'
 
 # resulting airgap bundle name prefix as delivered
-default['ma2']['aib']['name'] = 'chef-automate-airgap'
+# default['ma2']['aib']['name'] = 'chef-automate-airgap'
 
 # where to lodge the airgap bundle after building
 default['ma2']['aib']['dir'] = '/tmp/aibundle'

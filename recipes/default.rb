@@ -21,7 +21,4 @@
 # end
 
 include_recipe 'my_a2::prereqs'
-#include_recipe 'managed-automate2::airgap_bundle'
-
-# comment out the above line once run, then comment in the line below
 include_recipe 'managed-automate2::default'

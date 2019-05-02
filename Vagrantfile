@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "bento/centos-7"
 
-  config.vm.synced_folder "/tmp", "/shared/work"
+  config.vm.synced_folder "/shared", "/shared"
 
   config.vm.provision "shell", inline: <<-SHELL
     sudo rpm -Uvh /shared/work/chef-14.6.47-1.el7.x86_64.rpm
