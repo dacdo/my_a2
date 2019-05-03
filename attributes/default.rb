@@ -16,4 +16,4 @@ default['ma2']['aib']['file'] = 'aib-file'
 # default['ma2']['aib']['name'] = 'chef-automate-airgap'
 
 # where to lodge the airgap bundle after building
-default['ma2']['aib']['dir'] = '/tmp/aibundle'
+# default['ma2']['aib']['dir'] = '/tmp/aibundle'

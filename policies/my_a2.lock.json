@@ -1,5 +1,5 @@
 {
-  "revision_id": "6a917a9ae245522d233487ce9c260eb36e2c092562158936e9203ebcb1286dbe",
+  "revision_id": "163a0be8d48c22b30a8fb35db833e2271817fa517ff3c672370e2f69d3cda0c4",
   "name": "my_a2",
   "run_list": [
     "recipe[my_a2::default]"
@@ -9,36 +9,35 @@
   ],
   "cookbook_locks": {
     "managed-automate2": {
-      "version": "0.7.0",
-      "identifier": "a8d4ccae387445cd2955c9131ecad99dd3d28e79",
-      "dotted_decimal_identifier": "47521771648742469.57747818648116938.239271886884473",
-      "source": "../../managed-automate2-cookbook",
+      "version": "0.8.0",
+      "identifier": "b4bafe32dfe4d59b2aa8880a8768402933d0d43b",
+      "dotted_decimal_identifier": "50871096745911509.43675524715415400.70545707160635",
+      "source": "../../a2",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "https://github.com/mattray/managed-automate2-cookbook.git",
-        "revision": "5d7890b89d54f6b7e301eaf560c2d4d89a78d678",
-        "working_tree_clean": false,
+        "remote": "https://github.com/dacdo/a2.git",
+        "revision": "3e3bf2bb017887743cd1ae3c53283461ab36d6c6",
+        "working_tree_clean": true,
         "published": true,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
           "origin/master"
         ]
       },
       "source_options": {
-        "path": "../../managed-automate2-cookbook"
+        "path": "../../a2"
       }
     },
     "my_a2": {
       "version": "0.1.0",
-      "identifier": "e8a88bdaae25b1f06fa91e45c4af32c04c7a06e8",
-      "dotted_decimal_identifier": "65487513219638705.67676766558602415.55801498175208",
+      "identifier": "0ae10186405019ad729d18d50c5d26e8945089be",
+      "dotted_decimal_identifier": "3062146430685209.48821190022990941.42780362574270",
       "source": "..",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/dacdo/my_a2.git",
-        "revision": "c15bae9e2748178bcf476a0b41eb07dacda95548",
+        "revision": "302a7ab6f114684fc7a03a2c1c9b17d3b09cabe5",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -98,7 +97,7 @@
       ]
     ],
     "dependencies": {
-      "managed-automate2 (0.7.0)": [
+      "managed-automate2 (0.8.0)": [
         [
           "sysctl",
           "~> 1.0.5"

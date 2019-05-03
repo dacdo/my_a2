@@ -9,6 +9,7 @@ package 'tree'
 
 cookbook_file chefautomate do
   source 'chef-automate'
+  mode '0555'
   action :create
 end
 
